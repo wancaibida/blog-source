@@ -1,7 +1,12 @@
 title: Spring Boot YAML配置文件设置字段默认值
 author: Gang Chen
-date: 2017-10-30 21:19:47
 tags:
+  - java
+  - spring
+  - yaml
+categories:
+  - Java
+date: 2017-10-30 21:19:00
 ---
 SpringBoot中application.yaml如何设置配置项默认值一直困扰了我很久,官方文档也没有写如何设置默认值,今天有时间研究了下,发现只要加个冒号就可以了,如`${配置名:默认值}`.
 

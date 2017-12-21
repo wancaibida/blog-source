@@ -6,7 +6,8 @@ tags:
   - view
   - json-views
 categories:
-  - java
+  - Java
+  - ''
 date: 2017-12-21 13:21:00
 ---
 Grails 3.2版本中的rest-api profile加入了JSON View插件，JSON View插件主要用于渲染JSON返回内容，类似于GSP，其好处就是将JSON渲染从控制器层移到了视图层，同时JSON View还能定义模板，继承等。
@@ -189,4 +190,6 @@ def b = new Author(name: null,age: 29)=> {name: null,age: 29}
 ### 总结
 JSON View用下来还是遇到了不少的问题，主要原因是其约定太多且官方的文档也说的不是很清楚，有 些地方还是要一步步调试来研究源代码，但总的来说比传统的在代码中指定JSON格式方便了不少，用好了能节约不少时间与工作量。
 
-
+#### 参考链接
+https://github.com/skyboy101/widget-store-rest-api
+http://views.grails.org/1.1.x/

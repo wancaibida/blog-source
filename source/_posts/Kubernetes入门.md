@@ -1,10 +1,11 @@
 title: Kubernetes入门
 author: Gang Chen
 tags:
-  - Docker
-  - Kubernetes
+  - docker
+  - kubernetes
 categories:
-  - Docker
+  - docker
+  - ''
 date: 2017-11-20 22:09:00
 ---
 # Kubernetes入门

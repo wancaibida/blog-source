@@ -1,10 +1,11 @@
 title: Intellij远程调试Tomcat
 author: Gang Chen
 tags:
-  - Intellij
-  - Tomcat
+  - intellij
+  - tomcat
 categories:
-  - IDE
+  - ide
+  - ''
 date: 2017-12-02 14:02:00
 ---
 1. 在Tomcat下新建`setenv.sh`文件

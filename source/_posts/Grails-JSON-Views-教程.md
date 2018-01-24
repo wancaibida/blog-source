@@ -6,7 +6,7 @@ tags:
   - view
   - json-views
 categories:
-  - Java
+  - java
   - ''
 date: 2017-12-21 13:21:00
 ---

@@ -1,8 +1,9 @@
 title: Tomcat传递环境变量
 categories:
-  - Java
-tags: 
-  - Tomcat
+  - java
+  - ''
+tags:
+  - tomcat
 date: 2017-06-13 08:21:00
 ---
 

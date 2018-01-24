@@ -1,9 +1,10 @@
 title: HPKP(HTTP Public Key Pinning)详解
 author: Gang Chen
 tags:
-  - HPKP
+  - hpkp
 categories:
-  - Security
+  - security
+  - ''
 date: 2017-07-03 21:18:00
 ---
 ### HPKP是什么

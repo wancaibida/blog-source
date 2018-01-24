@@ -1,10 +1,11 @@
 title: 记一个Grails JSON Views的Bug
 author: Gang Chen
 tags:
-  - Grails
-  - JSON
+  - grails
+  - json
 categories:
-  - Java
+  - java
+  - ''
 date: 2017-12-03 15:25:00
 ---
 最近项目用到了3.2版本的Grails，这个版本中引入了一个新特性JSON views，主要作用是将JSON返回内容视为一种视图,类似于GSP。其好处就是可以在视图层定义返回json的格式，而且可以定义bean的JSON模版，比较灵活。

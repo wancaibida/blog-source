@@ -1,10 +1,11 @@
 title: Linux下启动Java守护进程方法
 author: Gang Chen
 tags:
-  - Java
-  - Linux
+  - java
+  - linux
 categories:
-  - Linux
+  - linux
+  - ''
 date: 2017-08-06 20:53:00
 ---
 ```bash

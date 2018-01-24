@@ -1,9 +1,10 @@
 title: PostgreSQL JDBC time类型存取细节
 author: Gang Chen
 tags:
-  - PostgreSQL
+  - postgresql
 categories:
-  - Database
+  - database
+  - ''
 date: 2017-06-14 22:58:00
 ---
 * PostgreSQL中默认时区为UTC

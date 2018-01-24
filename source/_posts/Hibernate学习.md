@@ -1,9 +1,10 @@
 title: Hibernate学习
 author: Gang Chen
 tags:
-  - Hibernate
+  - hibernate
 categories:
-  - Java
+  - java
+  - ''
 date: 2017-06-13 14:25:00
 ---
 ### 占位符（named parameters）对order by无效

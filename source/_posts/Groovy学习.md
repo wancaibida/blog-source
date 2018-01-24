@@ -1,10 +1,11 @@
 title: Groovy学习
 author: Gang Chen
 tags:
-  - Groovy
-  - Hibernate
+  - hibernate
+  - groovy
 categories:
-  - Java
+  - java
+  - ''
 date: 2017-06-13 14:03:00
 ---
 ### sort方法作用于Set和List时的区别

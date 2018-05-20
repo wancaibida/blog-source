@@ -1,4 +1,4 @@
-title: PostgreSQL JDBC time类型存取细节
+title: PostgreSQL JDBC 时间类型存取细节
 author: Gang Chen
 tags:
   - postgresql

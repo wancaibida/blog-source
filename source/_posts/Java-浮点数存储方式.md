@@ -19,7 +19,7 @@ Java浮点数使用的是IEEE二进制浮点数算术标准。
 以173.7为例：
 
 ### 173.7为正数，故符号位为0
-    <span style="color:blue">*0*</span> 00000000 00000000000000000000000
+<span style="color:blue">*0*</span> 00000000 00000000000000000000000
     
 ### 将其转换成1.??? * 2^?形式
 
@@ -57,7 +57,7 @@ Java浮点数使用的是IEEE二进制浮点数算术标准。
     
 由于到了0.4这一步这边是会个循环，0110 0110 ...
 加上尾数部分，最终存储格式如下：
-    <span style="color:blue">*0*</span> <span style="color:red">*1000 0110*</span> <span style="color:green">01011011011001100110011</span>
+    <span style="color:blue">*0*</span> <span style="color:red">*1000 0110*</span> <span style="color:green">*01011011011001100110011*</span>
    
 我们可以通过``Float.floatToIntBits(173.7)``来验证结果：
 
@@ -66,6 +66,3 @@ Float.floatToIntBits(173.7) = 1127068467
 1127068467用二进制表示，就是
 0 10000110 01011011011001100110011
 ```
-
-
-

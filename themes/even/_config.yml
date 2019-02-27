@@ -18,9 +18,9 @@ rss: default
 # ===========================================
 menu:
   Home: /
-  # Archives: /archives/
-  # Tags: /tags
-  # Categories: /categories
+  Archives: /archives/
+  Tags: /tags/
+  Categories: /categories/
   # About: /about
 
 # ===========================================
@@ -54,13 +54,13 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: wancaibida@gmail.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: https://github.com/ahonn
+  github: https://github.com/wancaibida
   weibo:
   zhihu:
   douban:
@@ -83,12 +83,12 @@ baidu_analytics:
 baidu_verification:
 
 # Google Analytics
-google_analytics:
+google_analytics: UA-77440077-1
 # Google Verification
 google_verification:
 
 # Disqus
-disqus_shortname:
+disqus_shortname: w2x-me
 
 #Changyan
 changyan:

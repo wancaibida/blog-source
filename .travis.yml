@@ -21,4 +21,6 @@ deploy:
 
 notifications:
   email:
-    - wancaibida@gmail.com
+    recipients:
+      - wancaibida@gmail.com
+    on_success: always

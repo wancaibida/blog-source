@@ -1,0 +1,21 @@
+language: node_js
+
+node_js: 
+  - 11.10.0
+
+cache: npm
+
+script:
+  - ./node_modules/hexo/bin/hexo generate
+  - cp README.md public/README.md
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  repo: wancaibida/blog
+  target-branch: master
+  on:
+    branch: master

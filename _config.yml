@@ -65,14 +65,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: even
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com-wancaibida:wancaibida/blog.git
-  branch: master
-  message: message
-
 # RSS
 feed:
   type: atom

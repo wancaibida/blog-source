@@ -1,4 +1,4 @@
-title: openwrt x86安装教程
+title: Openwrt x86安装教程
 author: 大丈夫没问题
 tags:
   - openwrt

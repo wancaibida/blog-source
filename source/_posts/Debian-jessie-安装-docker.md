@@ -7,21 +7,4 @@ categories:
   - docker
 date: 2018-12-20 11:31:00
 ---
-```
-sudo apt-get remove docker docker-engine docker.io
-sudo apt-get update
-sudo apt-get install \
-     apt-transport-https \
-     ca-certificates \
-     curl \
-     gnupg2 \
-     software-properties-common
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable"
-sudo apt-get update
-sudo apt-get install docker-ce
-```
+[debian-install-docker.sh](https://gist.githubusercontent.com/wancaibida/ea62205bd8de64860054ca8895cbb2b0/raw/6dbb41ec6b0ee281c93065aa0a15bc18e50a5804/debian-install-docker.sh)

@@ -14,7 +14,9 @@ Manjaro从地址栏访问samba共享的方式总有点问题，会时不时提�
 挂载命令：
 
 ```
-sudo mount.cifs //192.168.1.1/share0 /mnt/share0 -o user=xxxx,pass=xxxx,uid=1000,gid=1000,sec=ntlmssp,vers=1.0 --verbose
+cd /mnt
+sudo mkdir share0
+sudo mount.cifs //192.168.1.1/share0 /mnt/share0 -o user=SAMBA_USERNAME,pass=SAMBA_PASSWORD,uid=1000,gid=1000,sec=ntlmssp,vers=1.0 --verbose
 ```
 
 命令行挂载调通后，要实现开机自动挂载就容易的多了，官方文档提供的多种的挂载方式，这里以`systemd`为例：

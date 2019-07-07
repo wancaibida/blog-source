@@ -130,4 +130,12 @@ yaml配置文件
 这里主要参考了 `mustache` 文档里 `Inverted Sections` : [https://mustache.github.io/mustache.5.html](https://mustache.github.io/mustache.5.html)
 
 
+## aws-resource-init 资源更新问题
+[aws-resource-init-sources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html#aws-resource-init-sources)可以用来下载压缩文件并解压到EC2指定目录，但这里有个问题就是如果目标文件夹已存在，cloudformation会将两文件夹内容合并而不是替换文件夹！比如AWS部署的项目使用的依赖`LibraryA 1.0`，将library升级到`Library A 1.1`并通过cloudformation source下载并解压新本版的项目到目标目录后，目标目录的项目文件夹里会同时存在`Library A`的`1.0`和`1.1`版本。
+
+解决办法也很简单，在用sources下载前将目标文件夹移除。
+
 AWS平台的服务总有一些奇怪的限制或bug，调试时总会花不少时间，在此记录一下，希望能帮助到遇到相同问题的人，节约大家时间。
+
+## Update
+* 2019-07-07 添加aws-resource-init资源更新问题

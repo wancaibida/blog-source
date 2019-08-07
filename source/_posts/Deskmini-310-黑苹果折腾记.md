@@ -6,8 +6,6 @@ tags:
 categories: []
 date: 2019-06-13 20:47:00
 ---
-2019-06-16: 更新了发现的问题
-
 家里的台机装了`manjaro`，用了一阵子感觉还是不顺手，加上苹果电脑是越来越贵了，所以有了弄一台黑苹果的想法。
 
 期间看了不少有关黑苹果的资料，发现最简单的方法就是按照别人成功的硬件配置和EFI来安装，最终方案是按照 [asrock_deskmini310_hackintosh](https://github.com/liminghuang/asrock_deskmini310_hackintosh) 买的硬件：
@@ -34,8 +32,11 @@ date: 2019-06-13 20:47:00
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KnoS3zWpElo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 整个安装过程花了差不多七八个小时，不走弯路的话估计一两个小时就能搞定。
+
 用了几天发现两个问题：
 1. 休眠和启动时音箱会有爆音
 2. 从休眠恢复会黑一下屏幕
 
-
+## 更新日志
+* 2019-06-16: 更新了发现的问题
+* 2019-08-07: 升级到了10.14.6一切正常 

@@ -1,4 +1,4 @@
-title: Google Cloud部署web app到kubernetes并使用let’s encrypt和nginx-ingress
+title: Google Cloud使用kubernetes，let’s encrypt和nginx-ingress部署web app
 author: 大丈夫没问题
 tags:
   - k8s
@@ -32,6 +32,10 @@ helm install --name nginx-ingress stable/nginx-ingress --set rbac.create=true --
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.8/deploy/manifests/00-crds.yaml
+
+helm repo add jetstack https://charts.jetstack.io
+helm install --name cert-manager --namespace cert-manager jetstack/cert-manager
+
 kubectl create -f issuer.yaml
 ```
 
@@ -184,13 +188,19 @@ spec:
           servicePort: 80
 ```
 
+等`deployment`的`pod ready`后，访问你配置的域名，就可以看到https加密后的tomcat主页了。
 
 
-# Links
+
+## Links
 * https://cloud.google.com/community/tutorials/nginx-ingress-gke
 * https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nginx-ingress-on-digitalocean-kubernetes-using-helm
 * https://gist.github.com/snormore/c7c2935d746531ed0d75064a6ad6058e
 * https://github.com/helm/helm/issues/3130#issuecomment-372931407
 * [kubernetes-sample-app](https://github.com/wancaibida/kubernetes-sample-app)
 
+
+## Update
+
+* 2019-09-08: 添加了let's encrypt部分缺失的安装步骤。
 

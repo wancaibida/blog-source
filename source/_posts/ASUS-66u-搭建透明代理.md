@@ -42,11 +42,10 @@ opkg install iptables
 
 ### 创建目录
 
-* `mkdir /opt/etc/dnsmasq.d/`
+*  `mkdir /opt/etc/dnsmasq.d/`
+*  下载规则文件
 
-* 下载规则文件
-
-```shell
+```
 cd /opt/etc/dnsmasq.d/
 curl -O https://cokebar.github.io/gfwlist2dnsmasq/dnsmasq_gfwlist.conf
 ```

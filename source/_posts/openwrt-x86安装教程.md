@@ -137,6 +137,36 @@ smbpasswd -a samba
 
 写了一些定时[任务脚本](https://github.com/wancaibida/openwrt-scripts)，这里记录一下。
 
+## 安全设置
+
+### Luci页面访问控制
+
+Openwrt的管理页面默认是允许任何IP访问的，如果你的路由器有公网IP的话，那任何人都可访问到你家的路由器登录页面，通过下面设置只允许来自内网地址的访问：
+
+修改配置文件：
+```
+vi /etc/config/uhttpd
+```
+
+将`192.168.1.1`和`fe80::2e0:4cff:fe69:2db`换成路由器的v4和v6地址，openwrt默人情况下是`192.168.1.1`。
+```
+	# HTTP listen addresses, multiple allowed
+	list listen_http	192.168.1.1:80
+	list listen_http	fe80::2e0:4cff:fe69:2db:80
+
+	# HTTPS listen addresses, multiple allowed
+	list listen_https	192.168.1.1:443
+	list listen_https	fe80::2e0:4cff:fe69:2db:443
+```
+
+### SSH 访问控制
+
+登录openwrt管理页面 `System` -> `Administration`->`Dropbear Instance`
+
+`Interface` 那一项选择`lan`，然后`Save & Apply`，这样你的路由器ssh只能通过内网访问了。
+
+
+
 ## 参考
 
 
@@ -146,3 +176,7 @@ smbpasswd -a samba
 * [OpenWrt $$ 安装&配置指南](https://alalin.me/archives/805)
 * [那些从墙上学会的知识](https://icymind.com/learn-from-gfw/)
 * [samba 配置](https://openwrt.org/docs/guide-user/services/nas/samba_configuration)
+
+## 更新日志
+
+* 2019-11-09 添加了安全设置

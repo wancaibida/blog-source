@@ -148,16 +148,18 @@ Openwrt的管理页面默认是允许任何IP访问的，如果你的路由器�
 vi /etc/config/uhttpd
 ```
 
-将`192.168.1.1`和`fe80::2e0:4cff:fe69:2db`换成路由器的v4和v6地址，openwrt默认情况下是`192.168.1.1`。
+将`192.168.1.1`和`fd54:274c:96dd::1`换成路由器的v4和v6地址，路由器的lan IP可以在`Network`-> `Interfaces`->`LAN`查看，openwrt默认情况下是`192.168.1.1`。
 ```
 	# HTTP listen addresses, multiple allowed
 	list listen_http	192.168.1.1:80
-	list listen_http	fe80::2e0:4cff:fe69:2db:80
+	list listen_http	[fd54:274c:96dd::1]:80
 
 	# HTTPS listen addresses, multiple allowed
 	list listen_https	192.168.1.1:443
-	list listen_https	fe80::2e0:4cff:fe69:2db:443
+	list listen_https	[fd54:274c:96dd::1]:443
 ```
+
+*Note*: 如果要访问通过IPv6访问界面，URL应该是这个样子的：`http://[fd54:274c:96dd::1]`
 
 修改完成后重启服务：`/etc/init.d/uhttpd restart`
 

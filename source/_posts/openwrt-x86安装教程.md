@@ -159,6 +159,8 @@ vi /etc/config/uhttpd
 	list listen_https	fe80::2e0:4cff:fe69:2db:443
 ```
 
+修改完成后重启服务：`/etc/init.d/uhttpd restart`
+
 ### SSH 访问控制
 
 登录openwrt管理页面 `System` -> `Administration`->`Dropbear Instance`

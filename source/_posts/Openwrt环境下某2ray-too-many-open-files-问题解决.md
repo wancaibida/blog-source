@@ -8,7 +8,6 @@ date: 2020-06-01 21:07:00
 ---
 `too many open files`大部分情况下是由于配置错误引起的。如果配置没有问题,可以在某2ray的启动脚本里加上这一句：
 
-修改`/etc/sysctl.conf`文件，增加下面这一行:
 
 ```
 ulimit -SHn 65535
@@ -20,6 +19,7 @@ ulimit -SHn 65535
 ```
 cat /proc/{2AY进程id}/limits
 ```
+
 
 参考：
 * https://blog.ihipop.info/2011/01/2053.html

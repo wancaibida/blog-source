@@ -67,7 +67,7 @@ score < 94 OR (score = 94 AND username < 'fdf62b1a-5b4e-c561-38ad-74ac4f099a46')
 
 ## 进阶
 
-找出分页边界
+找出分页边界，这里的关键点是你要找出一列或者多列组成的唯一的列，如果你只按score排序的话，score会有重复的值，会导致排序结果不一致。
 
 ```
 SELECT p.id,

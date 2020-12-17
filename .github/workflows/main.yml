@@ -21,10 +21,9 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - run: npm rebuild node-sass
     - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
+      run: npm install
+    - run: npm rebuild node-sass
     
     # Deploy hexo blog website.
     - name: Deploy

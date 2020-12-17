@@ -23,8 +23,8 @@ jobs:
           ${{ runner.os }}-node-
     - name: Install Dependencies
       uses: actions/setup-node@v2
-        with:
-          node-version: '8.16.0'
+      with:
+        node-version: '8.16.0'
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm install
     

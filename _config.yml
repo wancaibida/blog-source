@@ -76,5 +76,6 @@ feed:
   
 deploy:
   type: git
-  repo: git@github.com:wancaibida/blog.git
+  repo: https://github.com/wancaibida/blog.git
   branch: master
+  token: $GITHUB_TOKEN

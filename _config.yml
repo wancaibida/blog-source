@@ -72,3 +72,9 @@ feed:
   limit: 20
   hub:
   content:
+  
+  
+deploy:
+  type: git
+  repo: git@github.com:wancaibida/blog.git
+  branch: master

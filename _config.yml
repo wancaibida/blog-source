@@ -78,4 +78,4 @@ deploy:
   type: git
   repo: https://github.com/wancaibida/blog.git
   branch: master
-  token: $GITHUB_TOKEN
+  token: $DEPLOYTOKEN
